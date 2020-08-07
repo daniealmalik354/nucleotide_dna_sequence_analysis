@@ -1,21 +1,16 @@
 ---
-title: "nucleotide_dna_sequence_analysis" 
-author: "daniealmalik"
-output: 
-  html_document:
-    theme: cosmo
-    highlight: monochrome
-    toc: true
-    toc_float: false
-    toc_depth: 4
-    code_folding: hide
+Title: "nucleotide_dna_sequence_analysis" 
+Author: "daniealmalik"
 ---
+## I will try to download nucleotide sequence from GenBank such as NCBI, and analysis through R
 
-
-
-I will try to download nucleotide sequence from GenBank such as NCBI, and analysis through R
+```{r loading_packages, message = FALSE}
 #Packages 
-library(ape) library(seqinr) library(dplyr) library(ggtree) library(ggplot2)
+library(ape) 
+library(seqinr) 
+library(dplyr) 
+library(ggtree) 
+library(ggplot2)
 
 #list of accesion number of sequence files from genebank that we want to download 
 list <- c("KP298953", "KC313384", "AY640303", "KC313382", "AY640302")
@@ -66,3 +61,4 @@ write.tree(tree2, "tree.tre")
 plot(tree2, edge.width = 5) 
 axisPhylo() 
 nodelabels(boots, cex = 1, frame = "none", adj = c(1.3, 1.5))
+```
