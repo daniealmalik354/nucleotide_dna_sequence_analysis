@@ -1,4 +1,18 @@
-nucleotide_dna_sequence_analysis
+---
+title: "nucleotide_dna_sequence_analysis" 
+author: "daniealmalik"
+output: 
+  html_document:
+    theme: cosmo
+    highlight: monochrome
+    toc: true
+    toc_float: false
+    toc_depth: 4
+    code_folding: hide
+---
+
+
+
 I will try to download nucleotide sequence from GenBank such as NCBI, and analysis through R
 #Packages 
 library(ape) library(seqinr) library(dplyr) library(ggtree) library(ggplot2)
