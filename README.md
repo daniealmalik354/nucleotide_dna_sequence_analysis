@@ -2,7 +2,7 @@
 Title: "nucleotide_dna_sequence_analysis" 
 Author: "daniealmalik"
 ---
-## I will try to download nucleotide sequence from GenBank such as NCBI, align it and make a tree through R
+## I try to download nucleotide sequence from GenBank such as NCBI, align it and make a tree through R
 
 ```{r loading_packages, message = FALSE}
 #Packages 
